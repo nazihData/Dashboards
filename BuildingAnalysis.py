@@ -84,19 +84,8 @@ def app_content():
         image.save(buffered, format="PNG")
         return base64.b64encode(buffered.getvalue()).decode()
 
-    # Image path and base64 encoding
-    image_path = "D:/Self-Service Launching/letterhead/new header.PNG"
-    img_str = get_image_base64(image_path)
-
-    # Center and display header image
-    st.markdown(
-        f"""
-        <div style="display: flex; justify-content: center;">
-            <img src="data:image/png;base64,{img_str}" alt="Header Image" />
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+   
+    
     # Title and subtitle
     st.markdown("<h1 style='text-align: center; font-size: 45px;'>Employees distribution across buildings</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center;'>October 7, 2024</h2>", unsafe_allow_html=True)
