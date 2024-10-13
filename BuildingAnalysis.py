@@ -8,14 +8,8 @@ from io import StringIO, BytesIO
 from datetime import datetime, timedelta
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import sys
-# import streamlit_authenticator as stauth
 
 st.set_page_config(page_title="Buildings", layout="wide")
-
-
-package_path = "C:/Users/ahmed.nazih/Desktop/streamlit_authenticator-0.4.1"
-sys.path.append(package_path)
 
 #%% --- Authenticator
 #
